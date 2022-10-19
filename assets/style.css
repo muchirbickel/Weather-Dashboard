@@ -5,7 +5,13 @@
 }
 
 header {
-    background-color: #000120
+    background: linear-gradient(to right,blue, rgb(12, 5, 71));
+    padding: 10PX;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20PX;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 div.title {
     
@@ -69,7 +75,7 @@ div.fiveDay p.card-title {
 }
 
 .card {
-    background-color: #0276fd;
+    background-color: black;
 }
 
 .text-muted {
