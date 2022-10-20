@@ -29,7 +29,7 @@ var date5El = document.getElementById("date-5");
 
 var appid = "132266594b684d4e3bb467aaccc0b109";
 
-// variables to store name, latitude and longitude information.
+// set store name, latitude and longitude information.
 var cityName;
 var latitude = 0;
 var longitude = 0;
@@ -70,7 +70,7 @@ function getCurrentWeatherInfo(temperature, speed, humidity) {
 }
 
 /**
- * This function uses api to get five days weather forecast information and display it on the page.
+ * use five days weather forecast information and display.
  */
 function getFiveDayWeatherInfo() {
     var url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + appid;
@@ -84,7 +84,7 @@ function getFiveDayWeatherInfo() {
             var month = date.slice(5, 7);
             var day = date.slice(8, 10);
             date1El.textContent = month + "/" + day + "/" + year;
-            temp1El.textContent = "Temp: " + data.list[0].main.temp + " F";
+            temp1El.textContent = "Temp: " + data.list[0].main.temp + " °F";
             wind1El.textContent = "Wind: " + data.list[0].wind.speed + " MPH";
             humid1El.textContent = "Humidity: " + data.list[0].main.humidity + " %";
 
@@ -93,7 +93,7 @@ function getFiveDayWeatherInfo() {
             var month = date.slice(5, 7);
             var day = date.slice(8, 10);
             date2El.textContent = month + "/" + day + "/" + year;
-            temp2El.textContent = "Temp: " + data.list[8].main.temp + " F";
+            temp2El.textContent = "Temp: " + data.list[8].main.temp + " °F";
             wind2El.textContent = "Wind: " + data.list[8].wind.speed + " MPH";
             humid2El.textContent = "Humidity: " + data.list[8].main.humidity + " %";
 
@@ -102,7 +102,7 @@ function getFiveDayWeatherInfo() {
             var month = date.slice(5, 7);
             var day = date.slice(8, 10);
             date3El.textContent = month + "/" + day + "/" + year;
-            temp3El.textContent = "Temp: " + data.list[16].main.temp + " F";
+            temp3El.textContent = "Temp: " + data.list[16].main.temp + " °F";
             wind3El.textContent = "Wind: " + data.list[16].wind.speed + " MPH";
             humid3El.textContent = "Humidity: " + data.list[16].main.humidity + " %";
 
@@ -111,7 +111,7 @@ function getFiveDayWeatherInfo() {
             var month = date.slice(5, 7);
             var day = date.slice(8, 10);
             date4El.textContent = month + "/" + day + "/" + year;
-            temp4El.textContent = "Temp: " + data.list[24].main.temp + " F";
+            temp4El.textContent = "Temp: " + data.list[24].main.temp + " °F";
             wind4El.textContent = "Wind: " + data.list[24].wind.speed + " MPH";
             humid4El.textContent = "Humidity: " + data.list[24].main.humidity + " %";
 
@@ -120,7 +120,7 @@ function getFiveDayWeatherInfo() {
             var month = date.slice(5, 7);
             var day = date.slice(8, 10);
             date5El.textContent = month + "/" + day + "/" + year;
-            temp5El.textContent = "Temp: " + data.list[32].main.temp + " F";
+            temp5El.textContent = "Temp: " + data.list[32].main.temp + " °F";
             wind5El.textContent = "Wind: " + data.list[32].wind.speed + " MPH";
             humid5El.textContent = "Humidity: " + data.list[32].main.humidity + " %";
         });
