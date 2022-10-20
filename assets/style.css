@@ -5,7 +5,7 @@
 }
 
 header {
-    background: linear-gradient(to right,blue, rgb(12, 5, 71));
+    background: linear-gradient(to right, blue, rgb(12, 5, 71));
     padding: 10PX;
     text-align: center;
     font-weight: 900;
@@ -13,71 +13,102 @@ header {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 div.title {
-    
+
     color: white;
     text-align: center;
 }
+
 div.title h1 {
     padding: 10px;
+}/* style rules for section containing content
+    inside aside tag */
+#container {
+    display: flex;
+    margin-top: 2%;
 }
 
-/* Main content */
-main.dashboard {
-    background-color: rgb(247, 247, 247);
+#search {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-/* Left Sidebar */
-div.recent-searches h2 {
-    font-size: 1.2rem;
-}
-
-div.cityList {
-    margin-top: 20px;
-}
-
-div.city {
-    padding: 10px;
-}
-
-div.cityName {
-    background-color: white;
-    color: black;   
-}
-/* Weather Data */
-
-div.currentWeather {
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-div.currentWeather h2,
-div.currentWeather h3 {
-    font-size: 1.3rem;
-    margin: 10px;
-}
-
-span#uv-index {
-    color: white;
-}
-
-div.fiveDay h2 {
-    font-size: 1.2rem;
-}
-
-div.fiveDay p {
-    font-size: .8rem;
-}
-
-div.fiveDay p.card-title {
+#search h2 {
+    font-size: 26px;
     font-weight: bold;
+}
+
+#search-input {
+    line-height: 1.6;
+    margin-bottom: 2%;
+}
+
+#btn-search {
     color: white;
+    background-color: #6991e3;
+    padding: 5px 0;
+    margin-bottom: 5%;
 }
 
-.card {
-    background-color: black;
+.previous {
+    margin-bottom: 2%;
 }
 
-.text-muted {
-    color: white !important;
+/* style rules for section with id = daily-forecast
+     inside main tag */
+
+#forecast {
+    width: 80%;
+}
+
+#forecast h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#daily-forecast {
+    border: solid black 1px;
+    margin-bottom: 1%;
+}
+
+#daily-forecast h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.daily-info {
+    font-size: 16px;
+    margin-bottom: 1%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* style rules for section with id = five-day-forecast
+    inside main tag */
+
+#five-day-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.five-days h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.five-days {
+    background-color: #323d4f;
+    color: white;
+    font-size: 16px;
+    padding-right: 5%;
+    padding-left: .5%;
+    padding-top: .5%;
+}
+
+.five-info {
+    margin-bottom: 15%;
 }
